@@ -3,35 +3,33 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - prod
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: '8.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.100'
 
-    - name: Build and Test
-      run: |
-        dotnet build --configuration Release
-        dotnet test --no-restore --verbosity normal
+      - name: Build and test
+        run: |
+          dotnet build -c Release
+          dotnet test -c Release --no-build --verbosity normal
 
-    - name: Publish Console App
-      run: |
-        dotnet publish -c Release -r win10-x64 src/Michael.Champalet.FeatureMatching.Console/Michael.Champalet.FeatureMatching.Console.csproj
-      artifacts:
-        name: ConsoleApp
-        path: bin/Release/net6.0/win10-x64/publish
+      - name: Publish Console App
+        if: success()
+        run: |
+          dotnet publish -c Release -r win-x64 --self-contained Michael.Champalet.FeatureMatching.Console/Michael.Champalet.FeatureMatching.Console.csproj
 
-    - name: Upload Console App
-      uses: actions/upload-artifact@v2
-      with:
-        name: ConsoleApp
-        path: bin/Release/net6.0/win10-x64/publish
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: published-app
+          path: ./bin/Release/netcoreapp3.1/win-x64/publish
