@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{67112E74-BEF7-43FC-9464-EF3F581DBC14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Michael.Champalet.FeatureMatching", "src\Michael.Champalet.FeatureMatching\Michael.Champalet.FeatureMatching.csproj", "{13F30D4D-58A6-45A1-9855-781634D48692}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{28BBF882-4B2F-483B-AAA6-7C0E3C1705DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Michael.Champalet.FeatureMatching.Tests", "tests\Michael.Champalet.FeatureMatching.Tests\Michael.Champalet.FeatureMatching.Tests.csproj", "{B54BB13E-83B7-403B-85B7-9FF36DE18CBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Michael.Champalet.FeatureMatching.Console", "src\Michael.Champalet.FeatureMatching.Console\Michael.Champalet.FeatureMatching.Console.csproj", "{F5839404-A18D-4F13-8592-04539B0A767F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Michael.Champalet.FeatureMatching.WebApi", "src\Michael.Champalet.FeatureMatching.WebApi\Michael.Champalet.FeatureMatching.WebApi.csproj", "{8BD834FB-A205-4BA2-B872-AA3ACF5B6EDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13F30D4D-58A6-45A1-9855-781634D48692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F30D4D-58A6-45A1-9855-781634D48692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F30D4D-58A6-45A1-9855-781634D48692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F30D4D-58A6-45A1-9855-781634D48692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54BB13E-83B7-403B-85B7-9FF36DE18CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54BB13E-83B7-403B-85B7-9FF36DE18CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54BB13E-83B7-403B-85B7-9FF36DE18CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54BB13E-83B7-403B-85B7-9FF36DE18CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5839404-A18D-4F13-8592-04539B0A767F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5839404-A18D-4F13-8592-04539B0A767F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5839404-A18D-4F13-8592-04539B0A767F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5839404-A18D-4F13-8592-04539B0A767F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD834FB-A205-4BA2-B872-AA3ACF5B6EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD834FB-A205-4BA2-B872-AA3ACF5B6EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD834FB-A205-4BA2-B872-AA3ACF5B6EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD834FB-A205-4BA2-B872-AA3ACF5B6EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13F30D4D-58A6-45A1-9855-781634D48692} = {67112E74-BEF7-43FC-9464-EF3F581DBC14}
+		{B54BB13E-83B7-403B-85B7-9FF36DE18CBC} = {28BBF882-4B2F-483B-AAA6-7C0E3C1705DE}
+		{F5839404-A18D-4F13-8592-04539B0A767F} = {67112E74-BEF7-43FC-9464-EF3F581DBC14}
+		{8BD834FB-A205-4BA2-B872-AA3ACF5B6EDC} = {67112E74-BEF7-43FC-9464-EF3F581DBC14}
+	EndGlobalSection
+EndGlobal
